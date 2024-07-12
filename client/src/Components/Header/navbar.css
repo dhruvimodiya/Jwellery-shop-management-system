@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.active {
+  color: tomato;
+}
+.d-flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.logo h3 {
+  padding-left: 30px;
+}
+
+.navbar {
+  color: #161616;
+  text-align: center;
+  align-items: center;
+  height: 60px;
+}
+
+.nav__links {
+  padding-left: 15px;
+}
+
+ul li a {
+  color: #161616;
+  padding: 10px 15px;
+}
+
+.icon a {
+  margin-right: 35px;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.icon {
+  text-align: center;
+  align-items: center;
+  transition: 0.3s all;
+}
+
+.account,
+.cart,
+.search {
+  margin-right: -20px;
+  color: #161616;
+}
+.menu-list {
+  top: 0;
+}
+.menu-icon {
+  display: none;
+}
+.account1,
+.cart1,
+.search1 {
+  display: none;
+}
+
+/* Useroption css */
+.speedDial {
+  position: absolute;
+  right: 3vmax;
+  top: 4vmax;
+}
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  background-color: white;
+}
+/* ***************************Media Queries*********************** */
+/* large screen */
+@media screen and (max-width: 991px) {
+  .cart1,
+  .account1,
+  .search1 {
+    display: none;
+  }
+}
+
+/* medium devices */
+@media screen and (max-width: 767px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0px;
+    background-color: #f1f0ee;
+    z-index: 9999;
+  }
+
+  .menu-list li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .menu-icon i {
+    font-size: 24px;
+    color: #000;
+  }
+
+  .menu-list.show {
+    display: block;
+  }
+  .menu-icon {
+    margin-right: 10px;
+  }
+  .logo h3 {
+    padding-left: 25px;
+  }
+  .cart1,
+  .account1,
+  .search1 {
+    display: none;
+  }
+  .speedDial {
+    right: 3vmax;
+    top: 7vmax;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .logo h3 {
+    padding-left: 20px;
+  }
+  .cart1,
+  .account1,
+  .search1 {
+    display: none;
+  }
+}
+
+/* small screen */
+@media screen and (max-width: 180px) {
+  .cart,
+  .account,
+  .search {
+    display: none;
+  }
+  .cart1,
+  .account1,
+  .search1 {
+    display: block;
+    padding: 15px;
+    color: #161616;
+  }
+  .speedDial {
+    top: 8vmax;
+  }
+}

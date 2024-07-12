@@ -1,0 +1,32 @@
+.sidebar {
+  padding: 4rem 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar > a:first-child {
+  padding: 0;
+}
+.logo {
+  color: rgb(26, 20, 20);
+  text-align: center;
+}
+.sidebar a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.493);
+  font: 200 1rem "Roboto";
+  transition: all 0.5s;
+  padding: 2rem;
+}
+.sidebar a:hover {
+  color: tomato;
+  transform: scale(1.1);
+}
+.sidebar a > p {
+  display: flex;
+  align-items: center;
+}
+.sidebar a > p > svg {
+  margin-right: 0.5rem;
+}

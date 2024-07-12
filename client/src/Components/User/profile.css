@@ -1,0 +1,117 @@
+.profileContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  max-width: 100%;
+  position: fixed;
+  background-color: white;
+}
+
+.profileContainer > div {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profileContainer > .first_div > h1 {
+  color: rgba(0, 0, 0, 0.555);
+  transform: translateX(-10vmax) translateY(-2vmax);
+  margin-top: 20px;
+}
+.profileContainer > .first_div > img {
+  width: 20vmax;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+.profileContainer > .first_div > img:hover {
+  transform: scale(1.05);
+}
+.profileContainer > .first_div > a {
+  border: none;
+  background-color: tomato;
+  font: 400 1vmax "Roboto";
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.5s;
+  padding: 0.5vmax;
+  width: 30%;
+  margin: 4vmax;
+}
+
+.profileContainer > .first_div > a:hover {
+  background-color: rgb(204, 78, 56);
+}
+.profileContainer > .second_div {
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding: 5vmax;
+  align-items: flex-start;
+}
+
+.profileContainer > .second_div > div > h4 {
+  color: black;
+  font: 400 1.2vmax "Roboto";
+}
+.profileContainer > .second_div > div > p {
+  color: rgba(0, 0, 0, 0.418);
+  font: 400 1vmax cursive;
+  margin: 0.2vmax;
+}
+.profileContainer > .second_div > .other_links {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.profileContainer > .second_div > .other_links > a {
+  border: none;
+  background-color: rgb(68, 68, 68);
+  padding: 0.5vmax;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font: 400 1vmax "Roboto";
+  transition: all 0.5s;
+  margin: 1vmax 0;
+}
+.profileContainer > .second_div > .other_links > a:hover {
+  background-color: rgb(31, 31, 31);
+}
+
+/* media queries */
+@media screen and (max-width: 600px) {
+  .profileContainer {
+    flex-direction: column;
+  }
+  .profileContainer > .first_div > h1 {
+    margin-top: 20px;
+    transform: translateY(-2vmax);
+    font: 500 3.2vmax "Roboto";
+  }
+  .profileContainer > .first_div > a {
+    font: 400 1.7vmax "Roboto";
+    padding: 1vmax;
+  }
+  .profileContainer > .second_div {
+    text-align: center;
+    align-items: center;
+  }
+  .profileContainer > .second_div > div > h4 {
+    font: 400 2.5vmax "Roboto";
+  }
+  .profileContainer > .second_div > div > p {
+    font: 400 2vmax cursive;
+    margin: 0.5vmax 0;
+  }
+
+  .profileContainer > .second_div > .other_links > a {
+    font: 400 1.8vmax "Roboto";
+    padding: 1vmax;
+    margin: 2vmax 0;
+  }
+}

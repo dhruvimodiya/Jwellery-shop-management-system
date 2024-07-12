@@ -1,0 +1,70 @@
+.myOrdersPage {
+  width: 100%;
+  padding: 0 7vmax;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  flex-direction: column;
+  display: flex;
+  height: 90vh;
+  left: 0;
+  background-color: rgb(235, 235, 235);
+}
+
+#myOrdersHeading {
+  text-align: center;
+  background-color: rgb(44, 44, 44);
+  font: 400 1.2vmax "Roboto";
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s;
+  background-color: rgb(44, 44, 44);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  overflow-wrap: anywhere;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+thead th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e3e3e3;
+}
+
+td a {
+  padding: 5px 10px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .myOrdersPage {
+    padding: 0;
+    height: 80vh;
+  }
+  #myOrdersHeading {
+    padding: 4vw;
+    font: 400 2.2vmax "Roboto";
+  }
+}

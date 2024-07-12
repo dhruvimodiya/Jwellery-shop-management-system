@@ -1,0 +1,29 @@
+.productListContainer {
+  background-color: white;
+}
+.allorders_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 15px;
+}
+.order_item {
+  padding: 1.3rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.order_item > p {
+  margin: 3px;
+}
+.order_item > h3 {
+  margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .allorders_container {
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,33 @@
+html {
+  background-color: #f1f0ee;
+}
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+/* body {
+  cursor: url(""),auto;
+} */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  padding: 1vmax 1vmax;
+}
+.active {
+  color: tomato;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.greenColor {
+  color: green !important;
+}
+.redColor {
+  color: red !important;
+}

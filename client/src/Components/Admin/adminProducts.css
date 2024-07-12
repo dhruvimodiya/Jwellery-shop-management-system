@@ -1,0 +1,92 @@
+#productListHeading {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.productCardAdmin {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCardAdmin > img {
+  width: 14vmax;
+  height: 200px;
+}
+
+.productCardAdmin > .star-reviews {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardAdminSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.productCardAdmin > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCardAdmin > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCardAdmin:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26); 
+  transform: translateY(-1vmax);
+}
+
+.admin-option{
+  display: flex;
+  justify-content: space-evenly ;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .productCardAdmin > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCardAdmin > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCardAdmin > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCardAdmin > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+}
